@@ -29,7 +29,7 @@ describe Station do
 
     context "#address" do
       it "returns an address" do
-        expect(subject.address).to eq("800 Acoma St, Denver, CO 80204")
+        expect(subject.address).to eq("800 Acoma St")
       end
     end
 
