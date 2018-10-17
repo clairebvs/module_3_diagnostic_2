@@ -1,5 +1,4 @@
 class SearchPresenter
-  attr_reader :zip_code
 
   def initialize(zip_code)
     @zip_code = zip_code
@@ -11,7 +10,10 @@ class SearchPresenter
     end
   end
 
-  def service(zip_code)
+  private
+  attr_reader :zip_code
+
+  def service
     NrelService.new(zip_code)
   end
 end

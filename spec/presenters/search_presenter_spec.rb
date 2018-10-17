@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe SearchPresenter do
-  subject { SearchPresenter.new }
+  subject { SearchPresenter.new("80203") }
 
   it 'exists' do
     expect(subject).to be_a(SearchPresenter)
