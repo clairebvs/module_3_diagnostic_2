@@ -8,10 +8,10 @@ describe SearchPresenter do
   end
 
   context 'instance methods' do
-    context '#stations_data' do
+    context '#stations' do
       it 'returns all stations' do
-        expect(subject.stations_data.count).to eq(10)
-        expect(subject.stations_data.first).to be_a(Station)
+        expect(subject.stations.count).to eq(10)
+        expect(subject.stations.first).to be_a(Station)
       end
     end
   end
