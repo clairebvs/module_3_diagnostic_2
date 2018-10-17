@@ -4,7 +4,7 @@ class SearchPresenter
     @zip_code = zip_code
   end
 
-  def stations
+  def stations_raw
     @stations ||= service.stations.map do |station_data|
       Station.new(station_data)
     end

@@ -1,6 +1,6 @@
-<%= @search_presenter.stations.count %> Results
+<%= @search_presenter.stations_raw.count %> Results
 
-<% @search_presenter.stations.each do |station| %>
+<% @search_presenter.stations_raw.each do |station| %>
   <ul class="station">
     <li class="name"><%= station.name %></li>
     <li class="address"><%= station.address %></li>
