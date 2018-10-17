@@ -9,11 +9,4 @@ class Station
     @access_times = station_data[:access_days_time]
   end
 
-  def self.stations_data(zip_code = "80203")
-    nrel_service = NrelService.new('80203')
-    @stations = nrel_service.stations.map do |station_data|
-      Station.new(station_data)
-    end
-  end
-
 end

@@ -50,13 +50,5 @@ describe Station do
         expect(subject.access_times).to eq("24 hours daily")
       end
     end
-
-    context ".stations_data" do
-      it "returns an array of hash" do
-        zip_code = "80203"
-        expect(Station.stations_data(zip_code).first).to be_a(Station)
-      end
-    end
-
   end
 end
