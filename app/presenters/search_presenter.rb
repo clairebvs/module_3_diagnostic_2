@@ -5,7 +5,7 @@ class SearchPresenter
   end
 
   def stations
-    @stations = service.stations.map do |station_data|
+    @stations ||= service.stations.map do |station_data|
       Station.new(station_data)
     end
   end
